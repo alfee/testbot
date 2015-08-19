@@ -11,7 +11,7 @@
 module.exports = (robot) ->
 
   robot.hear /ぬるぽ|ヌルポ|ﾇﾙﾎﾟ/i, (res) ->
-    res.replay "ｶﾞｯ"
+    res.send "@#{res.message.user.name} ｶﾞｯ"
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
